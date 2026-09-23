@@ -26,5 +26,5 @@ def execute(line: str) -> CommandResult:
             )
         return CommandResult(should_exit=True)
     if name in ("ls", "cd"):
-        return CommandResult(f"{name}: аргументы: {arguments!r}")
+        return CommandResult(f"{name}: аргументы: {arguments}")
     return CommandResult(f"{name}: команда не найдена", is_error=True)

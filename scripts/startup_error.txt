@@ -1,0 +1,3 @@
+ls "before error"
+unknown-command
+cd "must not be executed"
